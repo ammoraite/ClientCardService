@@ -1,4 +1,9 @@
+using CardStorageService.Data;
+using CardStorageService.Services;
+using CardStorageService.Services.Impl;
+
 using Microsoft.AspNetCore.HttpLogging;
+using Microsoft.EntityFrameworkCore;
 
 using NLog.Web;
 
@@ -8,6 +13,7 @@ namespace CardStorageService
     {
         public static void Main ( string[] args )
         {
+            #region ServiceBuilder
             var builder = WebApplication.CreateBuilder (args);
 
             #region ConfigureLoggerService
@@ -31,11 +37,32 @@ namespace CardStorageService
 
             #endregion
 
+            #region Confugure EF DBContext Service (CardStorageService Database)
+
+            builder.Services.AddDbContext<CardStorageServiceDbContext> (options =>
+            {
+                options.UseSqlServer (builder.Configuration["DatabaseOptions:ConnectionString"]);
+            });
+
+            #endregion
+
+            #region Configure Repositories Services
+
+            builder.Services.AddScoped<ICardRepositoryService, CardRepository> ( );
+            builder.Services.AddScoped<IClientRepositoryService, ClientRepository> ( );
+
+            #endregion
+
+            #region AddEndpointsApiExplorer AddControllers AddSwaggerGen
             builder.Services.AddControllers ( );
             builder.Services.AddEndpointsApiExplorer ( );
             builder.Services.AddSwaggerGen ( );
+            #endregion
+
 
             var app = builder.Build ( );
+            #endregion
+
 
             if (app.Environment.IsDevelopment ( ))
             {
