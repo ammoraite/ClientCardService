@@ -4,7 +4,7 @@ namespace CardStorageService.Controllers
 {
     [Route ("api/[controller]")]
     [ApiController]
-    public class ClientController:ControllerBase
+    public class ClientController : ControllerBase
     {
 
     }
