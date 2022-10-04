@@ -1,11 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.3.32825.248
+VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardStorageService", "CardStorageService\CardStorageService.csproj", "{457410A7-5C64-4AFF-A55E-F70B5CE97E1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardStorageService", "CardStorageService\CardStorageService.csproj", "{4442FB75-E929-4023-AFF4-510E39DA1CD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardStorageService.Data", "CardStorageService.Data\CardStorageService.Data.csproj", "{A9D840FB-2FE3-48D0-887C-24F2DB3EB41D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DA3AC78B-749F-43BC-83A7-73830D2A08E4}"
+	ProjectSection(SolutionItems) = preProject
+		ef.readme.txt = ef.readme.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardStorageService.Data", "CardStorageService.Data\CardStorageService.Data.csproj", "{C90578A3-EB0F-4FDF-A9EE-09817BA56B38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtSample", "JwtSample\JwtSample.csproj", "{85086287-27D4-46AB-A7AC-8245C179EC4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordUtilsClient", "PasswordUtilsClient\PasswordUtilsClient.csproj", "{34BAE92D-9D81-4B42-80E1-5460BB10DBCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +22,27 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{457410A7-5C64-4AFF-A55E-F70B5CE97E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{457410A7-5C64-4AFF-A55E-F70B5CE97E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{457410A7-5C64-4AFF-A55E-F70B5CE97E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{457410A7-5C64-4AFF-A55E-F70B5CE97E1D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A9D840FB-2FE3-48D0-887C-24F2DB3EB41D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A9D840FB-2FE3-48D0-887C-24F2DB3EB41D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A9D840FB-2FE3-48D0-887C-24F2DB3EB41D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A9D840FB-2FE3-48D0-887C-24F2DB3EB41D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4442FB75-E929-4023-AFF4-510E39DA1CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4442FB75-E929-4023-AFF4-510E39DA1CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4442FB75-E929-4023-AFF4-510E39DA1CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4442FB75-E929-4023-AFF4-510E39DA1CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C90578A3-EB0F-4FDF-A9EE-09817BA56B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C90578A3-EB0F-4FDF-A9EE-09817BA56B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C90578A3-EB0F-4FDF-A9EE-09817BA56B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C90578A3-EB0F-4FDF-A9EE-09817BA56B38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85086287-27D4-46AB-A7AC-8245C179EC4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85086287-27D4-46AB-A7AC-8245C179EC4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85086287-27D4-46AB-A7AC-8245C179EC4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85086287-27D4-46AB-A7AC-8245C179EC4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34BAE92D-9D81-4B42-80E1-5460BB10DBCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34BAE92D-9D81-4B42-80E1-5460BB10DBCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34BAE92D-9D81-4B42-80E1-5460BB10DBCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34BAE92D-9D81-4B42-80E1-5460BB10DBCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9A25AFC5-9C8C-45A4-9253-8A406D81C840}
+		SolutionGuid = {F95EDBCC-F418-4858-8A84-D99E047A68A0}
 	EndGlobalSection
 EndGlobal

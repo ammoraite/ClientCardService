@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using CardStorageService.Data;
+﻿using CardStorageService.Data;
 
 namespace CardStorageService.Services
 {
-    public interface ICardRepositoryService:IRepository<Card,string>
+    public interface ICardRepositoryService : IRepository<Card, string>
     {
-        IList<Card> GetByClientId(string clientId);
+        IList<Card> GetByClientId(string id);
     }
 }

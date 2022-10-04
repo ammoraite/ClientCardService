@@ -1,27 +1,32 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace CardStorageService.Data
 {
-    [Table ("Cards")]
+    [Table("Cards")]
     public class Card
     {
-        [Key, DatabaseGenerated (DatabaseGeneratedOption.Identity)]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid CardId { get; set; }
 
-        [ForeignKey (nameof (Client))]
+        [ForeignKey(nameof(Client))]
         public int ClientId { get; set; }
 
         [Column]
-        [StringLength (20)]
+        [StringLength(20)]
         public string CardNo { get; set; }
 
         [Column]
-        [StringLength (50)]
+        [StringLength(50)]
         public string? Name { get; set; }
 
         [Column]
-        [StringLength (50)]
+        [StringLength(50)]
         public string? CVV2 { get; set; }
 
         [Column]
